@@ -12,15 +12,15 @@ int main(){
         cin>>x;
         v.push_back(x);
     }
-    for(auto item : v){
-        if(item == num){
-            cout<<num<<" is present"<<endl;
+    for(int i=0; i<v.size(); i++{
+        if(v[i] == num){
+            cout<<"Present "<<i+1<<endl;
             f=true;
             break;
         }
     }
     if(!f){
-        cout<<"Not present "<<num<<endl;
+        cout<<"Not present "<<v.size()<<endl;
     }
     return 0;
 }
