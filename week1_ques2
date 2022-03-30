@@ -4,6 +4,8 @@ using namespace std;
 int main(){
     vector<int> v;
     int num,n;
+    bool f = false;
+    int comp=0;
     cin>>num;
     cin>>n;
     while(n--){
@@ -15,8 +17,17 @@ int main(){
     int r=v.size()-1;
     while(r>=l){
         int m = l+(r-l)/2;
+        comp++;
         if(v[m] == num){
-            cout<<
+            cout<<"Present "<<comp<<endl;
+            f=true;
+            break;
         }
+        else if(v[m] > num) r=m-1;
+        else l=m+1;
     }
+    if(!f){
+        cout<<"Not Present "<<comp<<endl;
+    }
+    return 0;
 }
