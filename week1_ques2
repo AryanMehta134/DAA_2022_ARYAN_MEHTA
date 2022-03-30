@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    vector<int> v;
+    int num,n;
+    cin>>num;
+    cin>>n;
+    while(n--){
+        int x;
+        cin>>x;
+        v.push_back(x);
+    }
+    int l=0;
+    int r=v.size()-1;
+    while(r>=l){
+        int m = l+(r-l)/2;
+        if(v[m] == num){
+            cout<<
+        }
+    }
+}
