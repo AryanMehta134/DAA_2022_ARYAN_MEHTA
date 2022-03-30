@@ -3,10 +3,9 @@ using namespace std;
 
 int main(){
     vector<int> v;
-    int num;
     bool f = false;
+    int num,n;
     cin>>num;
-    int n;
     cin>>n;
     while(n--){
         int x;
