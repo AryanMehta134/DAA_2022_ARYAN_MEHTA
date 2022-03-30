@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+    vector<int> v;
+    int num;
+    bool f = false;
+    cin>>num;
+    int n;
+    cin>>n;
+    while(n--){
+        int x;
+        cin>>x;
+        v.push_back(x);
+    }
+    for(auto item : v){
+        if(item == num){
+            cout<<num<<" is present"<<endl;
+            f=true;
+            break;
+        }
+    }
+    if(!f){
+        cout<<"Not present "<<num<<endl;
+    }
+    return 0;
+}
